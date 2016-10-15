@@ -9,10 +9,10 @@ button.onclick=function(){
             {
                 var counter=request.responseText;
                 var span=document.getElementbyId("span");
-                span.innerhtml=counter.toString();
+                span.innerHTML=counter.toString();
             }
         }
     };
-    request.open("http://sanathvobilisetty.imad.hasura-app.io/counter",null);
+    request.open("http://sanathvobilisetty.imad.hasura-app.io/counter",true);
     request.send(null);
 };
